@@ -1,0 +1,8 @@
+#!/bin/bash
+DIRECTORY=$(dirname "$0")
+echo "Changing to ${DIRECTORY}"
+cd  "$DIRECTORY" || exit 1
+
+cd /builds/COURSE-NETSEC-ACME-AS-2019/aziani-acme-project-netsec-fall-19/
+
+./main $@

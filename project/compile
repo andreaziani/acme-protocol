@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export GOPATH=$(pwd)
+go get github.com/sirupsen/logrus
+go get github.com/jessevdk/go-flags
+go get github.com/miekg/dns
+go build $GOPATH/src/acme/main.go
